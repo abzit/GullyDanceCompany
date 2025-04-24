@@ -14,22 +14,28 @@
 }
 #head{
     background-color: #2e2e2e;
-    height: 25vh;
+    height: 0vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    animation : down 1s ease forwards;
+}
+@keyframes down{
+    to{
+        height: 25vh;
+    }
 }
 #logo{
     height: 80%;
     margin: 0;
-    animation: down 0.6s ease-in;
+    /* animation: down 0.6s ease-in; */
 }
 #logo img{
     height: 100%;
     width: 100%;
 }
-@keyframes down{
+/* @keyframes down{
     from{
         opacity: 0;
         transform: translate(0,-4rem);
@@ -39,7 +45,7 @@
         opacity: 1;
         transform: translate(0,0);
         }
-    }
+    } */
 
 
 nav{
@@ -111,8 +117,15 @@ nav ul li{
 
 #bgImg{
     width: 100vw;
-    transform: translate(0,-100);
+    transform: translate(0,100rem);
     height: 60vh;
+    animation: up 1s ease forwards;
+}
+@keyframes up{
+    
+    to{
+        transform: translate(0,0);
+    }
 }
 #bgImg img{
     width: 100%;
