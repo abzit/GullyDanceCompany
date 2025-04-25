@@ -192,6 +192,7 @@ footer{
     align-items: center;
     justify-items: center;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer #socials{
     display: flex;
@@ -201,15 +202,15 @@ footer #socials{
 footer a:hover span{
     color: #c4f400;
 }
-#facebook:hover i{
+#facebook i{
     color: #0765FF;
 }
-#instagram:hover i{
+#instagram i{
     background: linear-gradient(60deg, #f9ce34, #ee2a7b,#6228d7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-#youtube:hover i{
+#youtube i{
     color: #FF0032;
 }
 #classes{
