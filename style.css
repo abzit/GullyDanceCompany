@@ -411,6 +411,6 @@ footer a:hover span{
         width :100%
     }
     .reviewsContainer{
-        min-height: 60vh;
+        max-height: 60vh;
     }
 }
