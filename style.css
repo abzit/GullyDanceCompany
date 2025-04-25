@@ -110,9 +110,12 @@ nav ul li{
     height: 50vh;
 } */
 
-#about,#works p{
+#about p,#works p,.reviewHead p{
     font-size: 1rem;
     font-family: Poppins;
+}
+#about p::first-letter{
+    font-size: 1.2rem;
 }
 
 #bgImg{
@@ -158,8 +161,9 @@ nav ul li{
     background-color: white;
     border-radius: 1rem;
     padding: 1rem;
-    /* height: 78%; */
-    /* overflow-y: scroll; */
+    
+    /* height: 30%;
+    overflow-y: scroll; */
     filter: drop-shadow(.1rem .1rem 0.5rem rgba(00,0,0,0.2));
 }
 
@@ -217,18 +221,17 @@ footer a:hover span{
 #classes h3{
     margin-bottom: 0.8rem;
 }
-.classContainer{
+.classContainer, .reviewsContainer{
     font-family: Poppins;
     display: flex;
     flex-direction: column;
-
+    gap: 0.5rem;
 }
 .class{
     background-color: #2e2e2e;
     color: white;
     border-left: #c4f400 2px solid;
     padding: 0.3rem 0 0.4rem 1rem;
-    margin-bottom: 0.5rem;
 }
 .classType{
     font-size: 1.1rem;
@@ -240,12 +243,66 @@ footer a:hover span{
     color: #c4f400;
 }
 
+.reviews{
+    color: white;
+    background: #2e2e2e;
+    border-radius: 1rem;
+    
+    margin-top: 1rem;
+    width: 100%;
+    transition: transform 1s ease;
+}
+.reviews:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.reviewHead{
+    display: flex;
+    width: 94.5%;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    border-top: 0.1rem solid white;
+}
+.reviewHead .name{
+    color: #c4f400;
+    text-transform: capitalize;
+}
+.reviewStars{
+    color: #FABC05;
+}
+.review{
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+    
+}
+.reviewsContainer{
+    padding: 0 1rem ;
+    max-height: 30vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+#Testimonials h2{
+    margin: 0;
+    padding: 0.5rem 1rem ;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
 #contact .content{
     display: flex;
     gap: 2rem;
 }
 #contact h2{
-    font-family: Poppins;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 1rem;
 }
 #contact hr{

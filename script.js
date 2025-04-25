@@ -6,11 +6,13 @@ const contact=document.querySelector('#nav-contact');
 
 const navs=document.querySelectorAll('.nav-link');
 const container=document.querySelectorAll('.container');
+document.getElementById("review1").addEventListener('click',()=>window.open("https://maps.app.goo.gl/mtcVjFptCXYZMYpv5","_blank"))
+document.getElementById("review2").addEventListener('click',()=>window.open("https://maps.app.goo.gl/smNiQaagkwacqELQ9","_blank"))
+document.getElementById("review3").addEventListener('click',()=>window.open("https://maps.app.goo.gl/pkvVEMvc3PoMyzD58","_blank"))
+document.getElementById("review4").addEventListener('click',()=>window.open("https://maps.app.goo.gl/Sp2jZ5yRL78exQrZ7","_blank"))
+document.getElementById("review5").addEventListener('click',()=>window.open("https://maps.app.goo.gl/GkWcsWqcKKzAEc8s7","_blank"))
 const arr=['']
-window.addEventListener('DOMContentLoaded', () => {
-    NavActivation(about);
-    activate(0);
-});
+
 about.addEventListener('click',()=>{
    NavActivation(about);
    activate(0);
@@ -55,7 +57,7 @@ function activate(n){
     container[n].classList.add('active');
 }
 function openWhatsApp() {
-    const number = "917702635421"; // Replace with your number
+    const number = "918688888974"; // Replace with your number
     const message = "Hi, I want to enquire about the dance classes";
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${number}?text=${encodedMessage}`;
