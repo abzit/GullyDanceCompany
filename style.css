@@ -409,4 +409,7 @@ footer a:hover span{
     #enquiry form{
         width :100%
     }
+    .reviewsContainer{
+        min-height: 35vh;
+    }
 }
