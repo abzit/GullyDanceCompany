@@ -29,23 +29,11 @@
 #logo{
     height: 80%;
     margin: 0;
-    /* animation: down 0.6s ease-in; */
 }
 #logo img{
     height: 100%;
     width: 100%;
 }
-/* @keyframes down{
-    from{
-        opacity: 0;
-        transform: translate(0,-4rem);
-    }
-    to{
-        
-        opacity: 1;
-        transform: translate(0,0);
-        }
-    } */
 
 
 nav{
@@ -95,20 +83,6 @@ nav ul li{
     border-top: 0px solid #c4f400;
     transition: all 0.5s ease;
 }
-
-/* #pageContent{
-    display: flex;
-    justify-content: center;
-} */
-/* main{
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-evenly;
-    width: 60vw;
-    overflow-x: scroll;
-    gap: 2rem;
-    height: 50vh;
-} */
 
 #about p,#works p,.reviewHead p{
     font-size: 1rem;
@@ -199,20 +173,10 @@ footer #socials{
     width: 40%;
     justify-content: space-around;
 }
-footer a:hover span{
+footer a:hover{
     color: #c4f400;
 }
-#facebook i{
-    color: #0765FF;
-}
-#instagram i{
-    background: linear-gradient(60deg, #f9ce34, #ee2a7b,#6228d7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-#youtube i{
-    color: #FF0032;
-}
+
 #classes{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -352,7 +316,7 @@ footer a:hover span{
     cursor: pointer;
 }
 
-@media screen and (width<=480px) {
+@media screen and (width<=700px) {
     header{
         border-bottom: .2rem solid #EFEFEF;
     }
